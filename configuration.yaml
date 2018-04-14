@@ -1,0 +1,166 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: !secret home_elevation
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: !secret home_timezone
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  # api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# Weather prediction
+sensor:
+  - platform: yr
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+switch:
+  - platform: broadlink
+    host: !secret RMPro_host_IP
+    mac: !secret RMPro_MAC
+    switches:
+
+# BEDROOM LIGHT / FAN STARTS HERE
+      bedroom_light_nf:
+        friendly_name: "Bedroom light/fan - Master Off"
+        command_on: 'eADKAEI/QT9BP0FAIBAPIiAQIBAhEA8iIBAPISEQDyIPIg8hDyIOIg8iD+khEA8iIBAgECEQDyIg
+EA8iIBAPIg8iDyEPIg4iDyIP6iAPECIgECARIBAPISEPECIgEA8iDyEQIQ8hECEPIRDrIBAPIiAQ
+IBEgEA8iIBAPIiAQDyIPIRAhDyEPIg8hD+sgEA8iIBAgESAQDyEhEA8iHxEPIg8hDyIPIQ8iDyEP
+6iEQDyEhECARIBAPISEQDyEgEQ8hECEPIg8hDyIPIQ8ABdwAAAAAAAAAAAAAAAAAAA=='
+        command_off: 'eADKAEI/QT9BP0FAIBAPIiAQIBAhEA8iIBAPISEQDyIPIg8hDyIOIg8iD+khEA8iIBAgECEQDyIg
+EA8iIBAPIg8iDyEPIg4iDyIP6iAPECIgECARIBAPISEPECIgEA8iDyEQIQ8hECEPIRDrIBAPIiAQ
+IBEgEA8iIBAPIiAQDyIPIRAhDyEPIg8hD+sgEA8iIBAgESAQDyEhEA8iHxEPIg8hDyIPIQ8iDyEP
+6iEQDyEhECARIBAPISEQDyEgEQ8hECEPIg8hDyIPIQ8ABdwAAAAAAAAAAAAAAAAAAA=='
+
+        friendly_name: "Bedroom light no fan"
+        command_on: 'eACiACARDiIgER8QIBEPIh8RDyIfEQ8iDyIfER8RDyIPIh/ZIBEPIh8RIBAgEQ8iHxEPIh8QECEP
+IiAQIBEPIg4iINkgEQ4iIBEfESARDyEgEBAhIBAPIg8iHxEgEQ8hDyIf2h8RDyIfESARHxEPIiAQ
+DyEgEQ8iDiMfER8RDyIPIh/aHxEPIh8RHxIfEQ8hIBEPISARDyEPIiARHxEPIQ8iIAAF3AAAAAAA
+AA=='
+        command_off: 'eADKAEI/QT9BP0FAIBAPIiAQIBAhEA8iIBAPISEQDyIPIg8hDyIOIg8iD+khEA8iIBAgECEQDyIg
+EA8iIBAPIg8iDyEPIg4iDyIP6iAPECIgECARIBAPISEPECIgEA8iDyEQIQ8hECEPIRDrIBAPIiAQ
+IBEgEA8iIBAPIiAQDyIPIRAhDyEPIg8hD+sgEA8iIBAgESAQDyEhEA8iHxEPIg8hDyIPIQ8iDyEP
+6iEQDyEhECARIBAPISEQDyEgEQ8hECEPIg8hDyIPIQ8ABdwAAAAAAAAAAAAAAAAAAA=='
+
+      bedroom_fan_low_no_light:
+        friendly_name: "Bedroom fan only - Low"
+        command_on: 'eAsiAB8SDyMfEiASIBIPIx8TDyMfEx8SIBMPIw8jDyMPIw8AAQQAAAAAAAA='
+        command_off: 'eAsiACASDyMgEiASIBIPIyASDyMgEw8jDyQPIw8kDyMPIw8AAQQAAAAAAAA='
+
+      bedroom_fan_medium_no_light:
+        friendly_name: "Bedroom fan only - Medium"
+        command_on: 'eAwgAB8TDyMgEh8THxMPIx8SDyMfEiASDyMPIw4jDyMPIw/0AAAAAAAAAAA='
+        command_off: 'eAsiACASDyMgEiASIBIPIyASDyMgEw8jDyQPIw8kDyMPIw8AAQQAAAAAAAA='
+
+      bedroom_fan_high_no_light:
+        friendly_name: "Bedroom fan only - High"
+        command_on: 'eADKAEA/QUBAQEBBHxEOIx8SHhIfEQ4jHxEOIx4SDiMfEQ8iDiIOIw4iDusgEQ4iHxIfER8SDiIf
+Eg4iHxIOIh8SDiMOIg4iDyIO6x8RDyIfEh8RHxIOIh8SDiIfEg4iHxIOIg4jDiIPIg7rHxEOIx8R
+HxIfEQ8iHxEOIx8RDiMfEg4iDiIPIg4iD+ogEQ4iHxIfEh8RDiMfEQ4jHxEOIh8SDiMOIg4jDiIO
+7B4RDyMeESARHxIOIh8RDyIfEQ8iHxIOIg8iDiIPIg4ABdwAAAAAAAAAAAAAAAAAAA=='
+        command_off: 'eAsiACASDyMgEiASIBIPIyASDyMgEw8jDyQPIw8kDyMPIw8AAQQAAAAAAAA='
+
+      bedroom_fan_low_and_light:
+        friendly_name: "Bedroom fan - Low with light on/off"
+        command_on: 'eADKAEE/QUBAP0FAIBAPIiARHxEgEQ4iIBEOIiARHxEgER8QIRAQIQ8iH9ofEQ8iHxEgECARDyIf
+EQ8hIBEgECARIBAgEQ8hECEg2SAQECEgER8RIBEPISARDiIgECARHxIgDyEQDyIPIh/aHxEPIh8R
+IBEfEQ8iHxEPISARIBEfESAQIBAQIRAhINkgEQ8hIBEfESARDyEgEA8iIBAgESARHxEgEBAhDyEg
+2x8RDyEgESARHxEPISARDyEgESARHxEgER8RDyEPIiAABdwAAAAAAAAAAAAAAAAAAA=='
+        command_off: 'eADKAEFAQEBAQEBBHxEOIx8RHxIfEg4iHxEOIx4SHxIeEw4iDiIPIg4iD+seEg4jHhIfER8SDiMe
+Eg4iHxIfER8SDiMOIg4iDyIO6x8SDiIfEh8RHxEPIh8RDyIfEh8RHxIOIg4jDiIOIw7rHxIOIh8S
+HxEfEg4iHxIOIh8SHhIfEg4iDiMOIg4jDusfEQ4jHxIeEh8RDiMfEQ4jHxEfEh4TDiIOIg8iDiIO
+6yARDiMeEh8SHhIOIx4SDiIfEh8SHhIOIw4iDiMOIg4ABdwAAAAAAAAAAAAAAAAAAA=='
+
+# LIVING ROOM LIGHT/FAN STARTS HERE
+      living_room_light:
+        friendly_name: "Living Room light"
+        command_on: 'sgscAAcQBwkPEAgQBxAHEAcQBxAHCQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
+        command_off: 'sg4cAAcQBwkPEAcRBxAHEAcRBxAHCQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
+
+      living_room_fan_high:
+        friendly_name: "Living Room fan - High"
+        command_on: 'sg4cAAcQBxAHEAgQBwkPEAcQBxAICQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
+        command_off: 'sg4cAAcQBxAHEAcRBxAHCQ8QBxAICQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
+
+      living_room_fan_medium:
+        friendly_name: "Living Room fan - Medium"
+        command_on: 'sg4cAAcQBxAHEAgJDxEHEAcQBxEHCQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
+        command_off: 'sg4cAAcQBxAHEAcRBxAHCQ8QBxAICQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
+
+      living_room_fan_low:
+        friendly_name: "Living Room fan - Low"
+        command_on: 'sg4cAAgJDxAHEAcQBxAHEAcQBxEHCQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
+        command_off: 'sg4cAAcQBxAHEAcRBxAHCQ8QBxAICQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
+
+# TV AND M8S PRO START HERE
+      samsung_tv_power:
+        friendly_name: "SAMSUNG TV power"
+        command_on: 'JgCMAJWTFTYUNhU2FBEUEhQRFBEUERU2FDYVNhQRFBEVERQRFBEUEhQ2FBEUEhQRFBEUERQSFDYU
+ERQ3FDYUNxQ2FDcUNhQABfKVkxQ2FTYUNhURFBEUERQSFBEUNhQ3FDYUEhQRFBEUERQSFBEUNhQS
+FBEUERQRFBIUERQ2FBIUNhQ3FDYUNhU2FDcUAA0FAAAAAAAAAAAAAAAA'
+        command_off: 'JgCMAJWTFTYUNhU2FBEUEhQRFBEUERU2FDYVNhQRFBEVERQRFBEUEhQ2FBEUEhQRFBEUERQSFDYU
+ERQ3FDYUNxQ2FDcUNhQABfKVkxQ2FTYUNhURFBEUERQSFBEUNhQ3FDYUEhQRFBEUERQSFBEUNhQS
+FBEUERQRFBIUERQ2FBIUNhQ3FDYUNhU2FDcUAA0FAAAAAAAAAAAAAAAA'
+
+      m8s_pro_l_power:
+        friendly_name: "Kodi box power"
+        command_on: 'JgBgAAABKZMUERURFBIUERQSFBIUERQSFDYUNhQ2FDYUNhU1FTYUNhQ2FBEVERQ2FDYVERQ2FBIU
+ERU1FTYUERURFDYUEhQ1FAAFGwABKkkUAAxZAAEqSRQADFoAASlJFQANBQAAAAAAAAAA'
+        command_off: 'JgBQAAABKpMTEhQSFBEUEhQSFBEUEhQRFDYVNhQ2FDYUNhQ2FDcTNhU2FBEUEhQ2FDcTEhQ2FBEU
+EhQ2FDYUEhQSFDYUERQ2FAAFGwABKkkUAA0FAAAAAAAAAAA='
