@@ -70,6 +70,25 @@ group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 
+#Weather
+weather:
+  - platform: BOM
+    station: IDN60901.94768
+    name: Sydney - Observatory Hill
+    monitored_conditions:
+      - weather
+
+#AM2302 sensor
+sensor:
+  - platform: dht
+    sensor: AM2302
+    pin: 4
+    monitored_conditions:
+      - temperature
+      - humidity
+
+#BROADLINK RM PRO PLUS
+
 switch:
   - platform: broadlink
     host: !secret RMPro_host_IP
