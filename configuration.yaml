@@ -72,7 +72,7 @@ script: !include scripts.yaml
 
 #Weather
 weather:
-  - platform: BOM
+  - platform: bom
     station: IDN60901.94768
     name: Sydney - Observatory Hill
     monitored_conditions:
