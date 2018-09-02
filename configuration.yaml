@@ -56,8 +56,12 @@ map:
 sun:
 
 # Weather prediction
-# sensor:
-#  - platform: yr
+sensor:
+ - platform: bom
+   name: Sydney
+   monitored_conditions:
+     - air_temp
+     - apparent_t
 
 # Text to speech
 tts:
@@ -75,8 +79,6 @@ weather:
   - platform: bom
     station: IDN60901.94768
     name: Sydney - Observatory Hill
-    monitored_conditions:
-      - weather
 
 #AM2302 sensor
 sensor:
