@@ -63,11 +63,11 @@ sun:
 
 # Weather prediction
 sensor:
- - platform: bom
-   name: Sydney
-   monitored_conditions:
-     - air_temp
-     - apparent_t
+  - platform: bom
+    name: Sydney
+    monitored_conditions:
+      - air_temp
+      - apparent_t
 
 # Text to speech
 tts:
