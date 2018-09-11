@@ -11,6 +11,8 @@
       - sun.sun
       - sensor.dht_sensor_temperature
       - sensor.dht_sensor_humidity
+      - sensor.bom_sydney_air_temp_c
+      - sensor.bom_sydney_feels_like_c
   lights:
     name: Lights
     view: no
