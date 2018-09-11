@@ -91,6 +91,7 @@ sensor:
 
   # Weather sensor
   - platform: bom
+    station: IDN60901.94768
     name: Sydney
     monitored_conditions:
       - air_temp
