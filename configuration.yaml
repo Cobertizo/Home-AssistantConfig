@@ -61,14 +61,6 @@ map:
 # Track the sun
 sun:
 
-# Weather prediction
-sensor:
-  - platform: bom
-    name: Sydney
-    monitored_conditions:
-      - air_temp
-      - apparent_t
-
 # Text to speech
 tts:
   - platform: google
@@ -88,14 +80,21 @@ weather:
     monitored_conditions:
       - weather
 
-#AM2302 sensor
 sensor:
+  #AM2302 sensor
   - platform: dht
     sensor: AM2302
     pin: 4
     monitored_conditions:
       - temperature
       - humidity
+
+  # Weather sensor
+  - platform: bom
+    name: Sydney
+    monitored_conditions:
+      - air_temp
+      - apparent_t
 
 #BROADLINK RM PRO PLUS
 
