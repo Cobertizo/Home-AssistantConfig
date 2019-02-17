@@ -77,8 +77,6 @@ weather:
   - platform: bom
     station: IDN60901.94768
     name: Sydney - Observatory Hill
-    monitored_conditions:
-      - weather
 
 sensor:
   #AM2302 sensor
