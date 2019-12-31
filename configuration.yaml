@@ -105,7 +105,7 @@ switch:
 
 # BEDROOM LIGHT / FAN STARTS HERE
       bedroom_light_nf:
-        friendly_name: "Light only"
+        friendly_name: "Bedroom light only"
         command_on: 'eACiACARDiIgER8QIBEPIh8RDyIfEQ8iDyIfER8RDyIPIh/ZIBEPIh8RIBAgEQ8iHxEPIh8QECEP
 IiAQIBEPIg4iINkgEQ4iIBEfESARDyEgEBAhIBAPIg8iHxEgEQ8hDyIf2h8RDyIfESARHxEPIiAQ
 DyEgEQ8iDiMfER8RDyIPIh/aHxEPIh8RHxIfEQ8hIBEPISARDyEPIiARHxEPIQ8iIAAF3AAAAAAA
@@ -116,17 +116,17 @@ IBEgEA8iIBAPIiAQDyIPIRAhDyEPIg8hD+sgEA8iIBAgESAQDyEhEA8iHxEPIg8hDyIPIQ8iDyEP
 6iEQDyEhECARIBAPISEQDyEgEQ8hECEPIg8hDyIPIQ8ABdwAAAAAAAAAAAAAAAAAAA=='
 
       bedroom_fan_low_no_light:
-        friendly_name: "Fan only (Low)"
+        friendly_name: "Bedroom fan only (Low)"
         command_on: 'eAsiAB8SDyMfEiASIBIPIx8TDyMfEx8SIBMPIw8jDyMPIw8AAQQAAAAAAAA='
         command_off: 'eAsiACASDyMgEiASIBIPIyASDyMgEw8jDyQPIw8kDyMPIw8AAQQAAAAAAAA='
 
       bedroom_fan_medium_no_light:
-        friendly_name: "Fan only (Medium)"
+        friendly_name: "Bedroom fan only (Medium)"
         command_on: 'eAwgAB8TDyMgEh8THxMPIx8SDyMfEiASDyMPIw4jDyMPIw/0AAAAAAAAAAA='
         command_off: 'eAsiACASDyMgEiASIBIPIyASDyMgEw8jDyQPIw8kDyMPIw8AAQQAAAAAAAA='
 
       bedroom_fan_high_no_light:
-        friendly_name: "Fan only (High)"
+        friendly_name: "Bedroom fan only (High)"
         command_on: 'eADKAEA/QUBAQEBBHxEOIx8SHhIfEQ4jHxEOIx4SDiMfEQ8iDiIOIw4iDusgEQ4iHxIfER8SDiIf
 Eg4iHxIOIh8SDiMOIg4iDyIO6x8RDyIfEh8RHxIOIh8SDiIfEg4iHxIOIg4jDiIPIg7rHxEOIx8R
 HxIfEQ8iHxEOIx8RDiMfEg4iDiIPIg4iD+ogEQ4iHxIfEh8RDiMfEQ4jHxEOIh8SDiMOIg4jDiIO
@@ -134,7 +134,7 @@ HxIfEQ8iHxEOIx8RDiMfEg4iDiIPIg4iD+ogEQ4iHxIfEh8RDiMfEQ4jHxEOIh8SDiMOIg4jDiIO
         command_off: 'eAsiACASDyMgEiASIBIPIyASDyMgEw8jDyQPIw8kDyMPIw8AAQQAAAAAAAA='
 
       bedroom_fan_low_and_light:
-        friendly_name: "Fan (Low) with light on/off"
+        friendly_name: "Bedroom fan (Low) with light on/off"
         command_on: 'eADKAEE/QUBAP0FAIBAPIiARHxEgEQ4iIBEOIiARHxEgER8QIRAQIQ8iH9ofEQ8iHxEgECARDyIf
 EQ8hIBEgECARIBAgEQ8hECEg2SAQECEgER8RIBEPISARDiIgECARHxIgDyEQDyIPIh/aHxEPIh8R
 IBEfEQ8iHxEPISARIBEfESAQIBAQIRAhINkgEQ8hIBEfESARDyEgEA8iIBAgESARHxEgEBAhDyEg
@@ -146,7 +146,7 @@ HxEfEg4iHxIOIh8SHhIfEg4iDiMOIg4jDusfEQ4jHxIeEh8RDiMfEQ4jHxEfEh4TDiIOIg8iDiIO
 
 # BEDROOM 2 LIGHT / FAN STARTS HERE
       bedroom_2_light_nf:
-        friendly_name: "Light only"
+        friendly_name: "Bedroom 2 light only"
         command_on: 'eADKAEBAQEBAQEBBHxEOIiARHxEgER8RDiMOIh8RDyIOIx4SHxEPIg4iDusfEQ8iHxEfEh8RHxIO
 Ig4iIBEOIg4jHxEfEg4iDiMO6h8SDiIfEh8RHxIeEg4iDyIfEQ8iDiIfEh8RDyIOIg7rHxEOIx8R
 HxIfER8RDyIOIh8SDiIOIx8RHxIOIg4iD+ofEg4iHxEgER8RHxIOIg4jHxEOIg8iHxIfEQ4iDyIO
@@ -154,12 +154,12 @@ HxIfER8RDyIOIh8SDiIOIx8RHxIOIg4iD+ofEg4iHxEgER8RHxIOIg4jHxEOIg8iHxIfEQ4iDyIO
         command_off: 'eCIiACASDyMgEiASIBIgEg8jDyMgEg8jDyMPIw8iDyMPIw8AAQMAAAAAAAA='
 
       bedroom_2_fan_low_no_light:
-        friendly_name: "Fan only (Low)"
+        friendly_name: "Bedroom 2 fan only (Low)"
         command_on: 'eHEiACARECIhESARIREgERAiECIhESARIBIQIhAiECIQIhAAAQIAAAAAAAA='
         command_off: 'eCIiACASDyMgEiASIBIgEg8jDyMgEg8jDyMPIw8iDyMPIw8AAQMAAAAAAAA='
 
       bedroom_2_fan_low_and_light:
-        friendly_name: "Fan (Low) with light"
+        friendly_name: "Bedroom 2 fan (Low) with light"
         command_on: 'eAGEAw8iHxEgER8RHxEPIg4iIBEfER8SHxEgECARDyEP6h8RDyIfESARHxEgEA8iDyEgER8RIBEf
 ESARHxEPIQ/qIBEOIh8RIBEfESARDiIPISARHxEgER8RIBEfEQ8iDuogEQ4iIBEfER8RIBEOIg8i
 HxEgECARIBAgER8RDyIOAAEQIBEOIiAQIBEfESARDiIPIh8RHxEgER8RIBEOIiARH9ofEQ4iIBEf
@@ -185,17 +185,17 @@ Eh8RHxIfER8RDyIOIg/qHxEPIh8RIBEfER8RDyIPISARHxEgER8RHxIOIg8hDwAF3AAAAAA='
         command_off: 'sg4cAAcQBwkPEAcRBxAHEAcRBxAHCQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
 
       living_room_fan_high:
-        friendly_name: "Living Room fan - High"
+        friendly_name: "Living Room fan (High)"
         command_on: 'sg4cAAcQBxAHEAgQBwkPEAcQBxAICQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
         command_off: 'sg4cAAcQBxAHEAcRBxAHCQ8QBxAICQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
 
       living_room_fan_medium:
-        friendly_name: "Living Room fan - Medium"
+        friendly_name: "Living Room fan (Medium)"
         command_on: 'sg4cAAcQBxAHEAgJDxEHEAcQBxEHCQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
         command_off: 'sg4cAAcQBxAHEAcRBxAHCQ8QBxAICQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
 
       living_room_fan_low:
-        friendly_name: "Living Room fan - Low"
+        friendly_name: "Living Room fan (Low)"
         command_on: 'sg4cAAgJDxAHEAcQBxAHEAcQBxEHCQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
         command_off: 'sg4cAAcQBxAHEAcRBxAHCQ8QBxAICQ8JDwkPCQ8AAQcAAAAAAAAAAAAAAAA='
 
