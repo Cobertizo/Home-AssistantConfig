@@ -95,6 +95,11 @@ sensor:
       - air_temp
       - apparent_t
 
+#PHILIPS HUE BRIDGE
+      hue:
+        bridges:
+          - host: !secret PhilipsHue_IP
+
 #BROADLINK RM PRO PLUS
 
 switch:
