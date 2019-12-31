@@ -96,9 +96,9 @@ sensor:
       - apparent_t
 
 #PHILIPS HUE BRIDGE
-      hue:
-        bridges:
-          - host: !secret PhilipsHue_IP
+hue:
+  bridges:
+    - host: !secret PhilipsHue_IP
 
 #BROADLINK RM PRO PLUS
 
