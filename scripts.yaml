@@ -1,0 +1,10 @@
+3hr_bedroom_fan_no_light:
+  alias: 3 hour bedroom fan (no light)
+  sequence:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.bedroom_fan_low_no_light
+    - delay: '03:00:00'
+    - service: switch.turn_off
+      data:
+        entity_id: switch.bedroom_fan_low_no_light

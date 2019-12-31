@@ -3,7 +3,7 @@
     view: yes
     icon: mdi:home
     entities:
-      - weather.bom_sydney__observatory_hill
+      - weather.bom_sydney_observatory_hill
       - group.lights
       - group.media
       - group.bedroom_fan
