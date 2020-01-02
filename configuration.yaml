@@ -95,6 +95,11 @@ sensor:
       - air_temp
       - apparent_t
 
+  - platform: waqi
+    token: !secret AQICN_API_token
+    locations:
+      - !secret AQICN_home_location
+
 #PHILIPS HUE BRIDGE
 hue:
   bridges:
