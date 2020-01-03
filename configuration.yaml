@@ -21,11 +21,14 @@ homeassistant:
 # Show links to resources in log and frontend
 # introduction:
 
-# Enables the frontend
-frontend:
+# Enables default configuration items
+default_config:
 
-# Enables configuration UI
-config:
+# Enables the frontend (included in default_config)
+# frontend:
+
+# Enables configuration UI (included in default_config)
+# config:
 
 http:
   # Secrets are defined in the file secrets.yaml
@@ -33,12 +36,12 @@ http:
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: example.duckdns.org:8123
 
-# Checks for available updates
+# Checks for available updates (included in default_config)
 # Note: This component will send some information about your system to
 # the developers to assist with development of Home Assistant.
 # For more information, please see:
 # https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
-updater:
+# updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   # include_used_components: true
 
@@ -48,25 +51,25 @@ updater:
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
-# Enables support for tracking state changes over time
-history:
+# Enables support for tracking state changes over time (included in default_config)
+# history:
 
-# View all events in a logbook
-logbook:
+# View all events in a logbook (included in default_config)
+# logbook:
 
-# Enables a map showing the location of tracked devices
-map:
+# Enables a map showing the location of tracked devices (included in default_config)
+# map:
 
-# Track the sun
-sun:
+# Track the sun (included in default_config)
+# sun:
 
 # Text to speech
 tts:
   - platform: google_translate
     service_name: google_say
 
-# Cloud
-cloud:
+# Cloud (included in default_config)
+# cloud:
 
 group: !include groups.yaml
 automation: !include automations.yaml
