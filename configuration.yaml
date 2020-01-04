@@ -109,6 +109,12 @@ hue:
   bridges:
     - host: !secret PhilipsHue_IP
 
+#DYSON HOT+COOL
+dyson:
+  username: !secret dysonUsername
+  password: !secret dysonPassword
+  language: AU
+
 #BROADLINK RM PRO PLUS
 
 switch:
