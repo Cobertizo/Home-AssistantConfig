@@ -12,6 +12,7 @@ homeassistant:
   time_zone: !secret home_timezone
   # Authorisation types
   auth_providers:
+    - type: homeassistant
     - type: trusted_networks
       trusted_networks:
         - !secret home_network_IPs
