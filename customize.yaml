@@ -14,7 +14,7 @@ switch.bedroom_2_fan_low_and_light:
   icon: mdi:spotlight
 light.hue_white_lamp_1:
   icon: mdi:floor-lamp
-light.bedroom_lamp
+light.bedroom_lamp:
   icon: mdi:lamp
 switch.bedroom_light_nf:
   icon: mdi:ceiling-light
