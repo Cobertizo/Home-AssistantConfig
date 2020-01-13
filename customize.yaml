@@ -10,10 +10,6 @@ switch.bedroom_2_light_nf:
   icon: mdi:ceiling-light
 switch.bedroom_2_fan_low_no_light:
   icon: mdi:fan
-switch.bedroom_2_fan_medium_no_light:
-  icon: mdi:fan
-switch.bedroom_2_fan_high_no_light:
-  icon: mdi:fan
 switch.bedroom_2_fan_low_and_light:
   icon: mdi:spotlight
 light.hue_white_lamp_1:
@@ -23,6 +19,10 @@ light.bedroom_lamp:
 switch.bedroom_light_nf:
   icon: mdi:ceiling-light
 switch.bedroom_fan_low_no_light:
+  icon: mdi:fan
+switch.bedroom_fan_medium_no_light:
+  icon: mdi:fan
+switch.bedroom_fan_high_no_light:
   icon: mdi:fan
 switch.bedroom_fan_low_and_light:
   icon: mdi:spotlight
