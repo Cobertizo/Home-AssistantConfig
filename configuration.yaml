@@ -87,6 +87,7 @@ sensor:
   - platform: dht
     sensor: AM2302
     pin: 4
+    humidity_offset: -20
     monitored_conditions:
       - temperature
       - humidity
