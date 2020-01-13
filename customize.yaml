@@ -10,7 +10,7 @@ switch.bedroom_2_fan_low_no_light:
   icon: mdi:fan
 switch.bedroom_2_fan_low_and_light:
   icon: mdi:spotlight
-light.hue_white_lamp_1
+light.hue_white_lamp_1:
   icon: mdi:floorlamp
 switch.bedroom_light_nf:
   icon: mdi:CeilingLight
@@ -20,7 +20,7 @@ switch.bedroom_fan_low_and_light:
   icon: mdi:spotlight
 switch.living_room_light:
   icon: mdi:CeilingLight
-switch.living_room_lamp_low
+switch.living_room_lamp_low:
   icon: mdi:fan
-air_quality.living_room
+air_quality.living_room:
   friendly_name: Air Quality Index (Dyson)
