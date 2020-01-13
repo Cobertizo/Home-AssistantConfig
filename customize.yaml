@@ -2,8 +2,10 @@ switch.m8s_pro_l_power:
   icon: mdi:kodi
 switch.samsung_tv_power:
   icon: mdi:television
-fan.living_room:
-  friendly_name: Dyson fan
+# air_quality.living_room:
+#  friendly_name: Air Quality Index (Dyson)
+# fan.living_room:
+#  friendly_name: Dyson fan
 switch.bedroom_2_light_nf:
   icon: mdi:CeilingLight
 switch.bedroom_2_fan_low_no_light:
@@ -22,5 +24,3 @@ switch.living_room_light:
   icon: mdi:CeilingLight
 switch.living_room_lamp_low:
   icon: mdi:fan
-air_quality.living_room:
-  friendly_name: Air Quality Index (Dyson)
