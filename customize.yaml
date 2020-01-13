@@ -7,20 +7,20 @@ air_quality.living_room:
 fan.living_room:
   friendly_name: Dyson fan
 switch.bedroom_2_light_nf:
-  icon: mdi:ceilinglight
+  icon: mdi:ceiling-light
 switch.bedroom_2_fan_low_no_light:
   icon: mdi:fan
 switch.bedroom_2_fan_low_and_light:
   icon: mdi:spotlight
 light.hue_white_lamp_1:
- icon: mdi:floorlamp
+ icon: mdi:floor-lamp
 switch.bedroom_light_nf:
-  icon: mdi:ceilinglight
+  icon: mdi:ceiling-light
 switch.bedroom_fan_low_no_light:
   icon: mdi:fan
 switch.bedroom_fan_low_and_light:
   icon: mdi:spotlight
 switch.living_room_light:
-  icon: mdi:ceilinglight
+  icon: mdi:ceiling-light
 switch.living_room_lamp_low:
   icon: mdi:fan
