@@ -1,0 +1,4 @@
+switch.m8s_pro_l_power:
+  icon: mdi:kodi
+switch.samsung_tv_power:
+  icon: mdi:tv
