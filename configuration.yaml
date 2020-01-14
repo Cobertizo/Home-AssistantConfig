@@ -115,6 +115,9 @@ dyson:
   username: !secret dysonUsername
   password: !secret dysonPassword
   language: AU
+  devices:
+    - device_id: A1E-AU-KNA3049A
+      device_ip: !secret dysonIP
 
 #BROADLINK RM PRO PLUS
 
