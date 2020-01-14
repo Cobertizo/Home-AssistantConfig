@@ -1,21 +1,24 @@
+# Media devices
 switch.m8s_pro_l_power:
   icon: mdi:kodi
 switch.samsung_tv_power:
   icon: mdi:television
+# Dyson fan
 air_quality.living_room:
   friendly_name: Air Quality Index (Dyson)
 fan.living_room:
   friendly_name: Dyson fan
+sensor.living_room_humidity:
+  friendly_name: Humidity (Dyson)
+sensor.living_room_temperature:
+  friendly_name: Temperature (Dyson)
+# Ceiling fan / lights
 switch.bedroom_2_light_nf:
   icon: mdi:ceiling-light
 switch.bedroom_2_fan_low_no_light:
   icon: mdi:fan
 switch.bedroom_2_fan_low_and_light:
   icon: mdi:spotlight
-light.hue_white_lamp_1:
-  icon: mdi:floor-lamp
-light.bedroom_lamp:
-  icon: mdi:lamp
 switch.bedroom_light_nf:
   icon: mdi:ceiling-light
 switch.bedroom_fan_low_no_light:
@@ -34,3 +37,8 @@ switch.living_room_fan_medium:
   icon: mdi:fan
 switch.living_room_fan_high:
   icon: mdi:fan
+# Hue devices
+light.hue_white_lamp_1:
+  icon: mdi:floor-lamp
+light.bedroom_lamp:
+  icon: mdi:lamp
