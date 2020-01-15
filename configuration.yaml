@@ -84,13 +84,13 @@ weather:
 
 sensor:
   #AM2302 sensor
-#  - platform: dht
-#    sensor: AM2302
-#    pin: 4
-#    humidity_offset: -20
-#    monitored_conditions:
-#      - temperature
-#      - humidity
+  - platform: dht
+    sensor: AM2302
+    pin: 4
+    humidity_offset: -20
+    monitored_conditions:
+      - temperature
+      - humidity
 
   # Weather sensor
   - platform: bom
