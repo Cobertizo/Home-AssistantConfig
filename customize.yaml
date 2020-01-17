@@ -38,7 +38,7 @@ switch.living_room_fan_medium:
 switch.living_room_fan_high:
   icon: mdi:fan
 # Hue devices
-light.hue_white_lamp_1:
+light.nursery_lamp:
   icon: mdi:floor-lamp
 light.bedroom_lamp:
   icon: mdi:lamp
