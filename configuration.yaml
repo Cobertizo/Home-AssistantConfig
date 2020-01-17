@@ -106,9 +106,9 @@ sensor:
       - !secret AQICN_home_location
 
 #PHILIPS HUE BRIDGE
-hue:
-  bridges:
-    - host: !secret PhilipsHue_IP
+# hue:
+#   bridges:
+#     - host: !secret PhilipsHue_IP
 
 #DYSON HOT+COOL
 dyson:
