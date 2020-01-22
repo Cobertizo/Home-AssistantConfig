@@ -111,25 +111,25 @@ sensor:
 #TP-Link HS110_plug sensors (energy monitoring)
   - platform: template
     sensors:
-      hs100_plug_amps:
-        friendly_name_template: "{{ states.switch.hs100_plug.name}} Current"
-        value_template: '{{ states.switch.hs100_plug.attributes["current_a"] | float }}'
+      hs110_plug_amps:
+        friendly_name_template: "{{ states.switch.hs110_plug.name}} Current"
+        value_template: '{{ states.switch.hs110_plug.attributes["current_a"] | float }}'
         unit_of_measurement: 'A'
-      hs100_plug_watts:
-        friendly_name_template: "{{ states.switch.hs100_plug.name}} Current Consumption"
-        value_template: '{{ states.switch.hs100_plug.attributes["current_power_w"] | float }}'
+      hs110_plug_watts:
+        friendly_name_template: "{{ states.switch.hs110_plug.name}} Current Consumption"
+        value_template: '{{ states.switch.hs110_plug.attributes["current_power_w"] | float }}'
         unit_of_measurement: 'W'
-      hs100_plug_total_kwh:
-        friendly_name_template: "{{ states.switch.hs100_plug.name}} Total Consumption"
-        value_template: '{{ states.switch.hs100_plug.attributes["total_energy_kwh"] | float }}'
+      hs110_plug_total_kwh:
+        friendly_name_template: "{{ states.switch.hs110_plug.name}} Total Consumption"
+        value_template: '{{ states.switch.hs110_plug.attributes["total_energy_kwh"] | float }}'
         unit_of_measurement: 'kWh'
-      hs100_plug_volts:
-        friendly_name_template: "{{ states.switch.hs100_plug.name}} Voltage"
-        value_template: '{{ states.switch.hs100_plug.attributes["voltage"] | float }}'
+      hs110_plug_volts:
+        friendly_name_template: "{{ states.switch.hs110_plug.name}} Voltage"
+        value_template: '{{ states.switch.hs110_plug.attributes["voltage"] | float }}'
         unit_of_measurement: 'V'
-      hs100_plug_today_kwh:
-        friendly_name_template: "{{ states.switch.hs100_plug.name}} Today's Consumption"
-        value_template: '{{ states.switch.hs100_plug.attributes["today_energy_kwh"] | float }}'
+      hs110_plug_today_kwh:
+        friendly_name_template: "{{ states.switch.hs110_plug.name}} Today's Consumption"
+        value_template: '{{ states.switch.hs110_plug.attributes["today_energy_kwh"] | float }}'
         unit_of_measurement: 'kWh'
 
 #PHILIPS HUE BRIDGE
