@@ -82,6 +82,9 @@ weather:
     station: IDN60901.94768
     name: Sydney - Observatory Hill
 
+#TP-Link intergration
+tp-link:
+
 sensor:
   #AM2302 sensor
   - platform: dht
