@@ -83,7 +83,7 @@ weather:
     name: Sydney - Observatory Hill
 
 #TP-Link intergration
-tp-link:
+tplink:
 
 sensor:
   #AM2302 sensor
