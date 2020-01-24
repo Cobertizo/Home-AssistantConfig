@@ -1,1 +1,25 @@
-[]
+# Turn on LED light strip in kitchen between dusk and dawn at a low, non-white light for a short period if the main light isn't on
+- id: kitchen_dim_overnight
+  alias: Kitchen night lighting
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.hue_motion_sensor_1_motion
+    from: "Clear"
+    to: "Detected"
+  condition:
+    condition: and
+    conditions
+      - condition: template
+        value_template: '{{ state_attr("sun.sun", "elevation") < -6 }}'
+        condition: template
+        value_template: "{{ states('sensor.hue_motion_sensor_1_light_level','lightlevel') < 16000 }}"
+  action:
+  - service: light.turn_on
+    data:
+      brightness: 160
+      rgb_colour: [255,153,51]
+      entity_id:
+        - light.rgbw_strip_5m
+  - delay: '00:04:00'
+  - service: light.turn_off
+    entity_id: light.rgbw_strip_5m
