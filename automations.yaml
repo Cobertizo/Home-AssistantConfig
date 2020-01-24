@@ -17,7 +17,7 @@
   - service: light.turn_on
     entity_id: light.rgbw_strip_5m
     data:
-      brightness: 160
+      brightness: 130
       rgb_color:
         - 255
         - 153
