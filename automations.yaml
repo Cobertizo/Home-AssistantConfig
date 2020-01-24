@@ -2,9 +2,10 @@
 - id: kitchen_dim_overnight
   alias: Kitchen night lighting
   trigger:
-  - platform: state
+  - platform: device
+    domain: binary_sensor
     entity_id: binary_sensor.hue_motion_sensor_1_motion
-    to: "Detected"
+    type: motion
   condition:
     condition: and
     conditions:
@@ -15,9 +16,10 @@
   action:
   - service: light.turn_on
     data:
-#      brightness: 160
-#      rgb_colour: [255,153,51]
-      entity_id: light.rgbw_strip_5m
+      brightness: 160
+      rgb_colour: [255,153,51]
+      entity_id:
+        - light.rgbw_strip_5m
   - delay: '00:04:00'
   - service: light.turn_off
     entity_id: light.rgbw_strip_5m
