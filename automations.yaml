@@ -18,7 +18,7 @@
     entity_id: light.rgbw_strip_5m
     data:
       brightness: 160
-      rgb_colour: [255,153,51]
+      rgb_color: [255,153,51]
   - delay: '00:04:00'
   - service: light.turn_off
     entity_id: light.rgbw_strip_5m
