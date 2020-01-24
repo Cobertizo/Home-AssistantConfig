@@ -8,10 +8,10 @@
     to: "Detected"
   condition:
     condition: and
-    conditions
+    conditions:
       - condition: template
         value_template: '{{ state_attr("sun.sun", "elevation") < -6 }}'
-        condition: template
+      - condition: template
         value_template: "{{ states('sensor.hue_motion_sensor_1_light_level','lightlevel') < 16000 }}"
   action:
   - service: light.turn_on
