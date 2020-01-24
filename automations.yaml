@@ -4,7 +4,6 @@
   trigger:
   - platform: state
     entity_id: binary_sensor.hue_motion_sensor_1_motion
-    from: "Clear"
     to: "Detected"
   condition:
     condition: and
