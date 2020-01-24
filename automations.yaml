@@ -2,10 +2,10 @@
 - id: kitchen_dim_overnight
   alias: Kitchen night lighting
   trigger:
-  - platform: device
-    domain: binary_sensor
+  - platform: state
     entity_id: binary_sensor.hue_motion_sensor_1_motion
-    type: motion
+    from: 'off'
+    to: 'on'
   condition:
     condition: and
     conditions:
