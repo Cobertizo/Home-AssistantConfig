@@ -3,7 +3,7 @@
   alias: Kitchen night lighting
   trigger:
   - platform: state
-    entity_id: binary_sensor.hue_motion_sensor_1_motion
+    entity_id: binary_sensor.kitchen_motion
     from: 'off'
     to: 'on'
   condition:
@@ -27,7 +27,7 @@
   alias: Kitchen night lighting off
   trigger:
   - platform: state
-    entity_id: binary_sensor.hue_motion_sensor_1_motion
+    entity_id: binary_sensor.kitchen_motion
     to: 'off'
     for: '00:02:00'
   condition:
