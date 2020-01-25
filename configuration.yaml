@@ -85,6 +85,24 @@ weather:
 #TP-Link integration
 tplink:
 
+#mqtt broker
+mqtt:
+  broker: !secret mqttBroker
+  port: !secret mqttPort
+  username: !secret mqttUsername
+  password: !secret mqttPassword
+
+#mqtt Hue motion sensor (with faster response)
+binary_sensor:
+   - platform: mqtt
+     state_topic: 'sensors/kitchen/motion'
+     name: 'Kitchen Motion'
+     qos: 0
+     payload_on: "1"
+     payload_off: "0"
+     value_template: '{{ value }}'
+     device_class: 'motion'
+
 sensor:
   #AM2302 sensor
   - platform: dht
