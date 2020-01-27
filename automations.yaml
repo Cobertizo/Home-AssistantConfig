@@ -15,7 +15,7 @@
         value_template: "{{ state_attr('sensor.hue_motion_sensor_1_light_level','lightlevel') < 16000 }}"
   action:
   - service: light.turn_on
-    entity_id: light.rgbw_strip_5m
+    entity_id: light.rgbw_light_strip_5m
     data:
       brightness: 130
       rgb_color:
@@ -39,5 +39,5 @@
         value_template: "{{ state_attr('sensor.hue_motion_sensor_1_light_level','lightlevel') < 16000 }}"
   action:
   - service: light.turn_off
-    entity_id: light.rgbw_strip_5m
+    entity_id: light.rgbw_light_strip_5m
   
