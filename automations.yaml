@@ -22,6 +22,7 @@
         - 255
         - 153
         - 51
+      white_value: 0
 # Turn off LED strip light after detecting no motion
 - id: kitchen_dim_overnight_off
   alias: Kitchen night lighting off
