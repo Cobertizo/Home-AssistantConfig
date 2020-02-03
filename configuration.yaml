@@ -25,6 +25,11 @@ homeassistant:
 # Enables default configuration items
 default_config:
 
+#enables additional logging
+logger:
+  logs:
+    homeassistant.components.tuya: debug
+
 # Enables the frontend (included in default_config)
 # frontend:
 
