@@ -42,3 +42,6 @@ light.nursery_lamp:
   icon: mdi:floor-lamp
 light.bedroom_lamp:
   icon: mdi:lamp
+#smart plugs
+switch.brilliant_smart_plug
+  icon: mdi:lamp
