@@ -85,6 +85,12 @@ weather:
 #TP-Link integration
 tplink:
 
+#tuya integration
+tuya:
+  username: !secret tuyaUsername
+  password: !secret tuyaPassword
+  country_code: !secret tuyaCountryCode
+
 #mqtt broker
 mqtt:
   broker: !secret mqttBroker
