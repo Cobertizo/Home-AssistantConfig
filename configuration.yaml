@@ -27,6 +27,7 @@ default_config:
 
 #enables additional logging
 logger:
+  default: info
   logs:
     homeassistant.components.tuya: debug
 
