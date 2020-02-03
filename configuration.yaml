@@ -30,6 +30,7 @@ logger:
   default: info
   logs:
     homeassistant.components.tuya: debug
+    homeassistant.components.websocket_api.http.connection.1852435056: debug
 
 # Enables the frontend (included in default_config)
 # frontend:
